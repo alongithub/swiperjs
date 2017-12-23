@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+</head>
+<style type="text/css">
+	*{margin: 0;padding: 0;}
+	body{color: #565;font-size: 14px;}
+	#along1{margin: 0 auto;float: left;margin-right: 30px;}
+	#along1,#along2,#along3,#along4,#along5,#along6{width: 300px;height: 200px;overflow: hidden;}
+	
+	img{height: 100%;width: 100%;}
+	table {
+background-color: #FFF;
+border: none;
+color: #565;
+font: 12px arial;
+}
+table caption {
+font-size: 24px;
+border-bottom: 2px solid #B3DE94;
+border-top: 2px solid #B3DE94;
+}
+table, td, th {
+margin: 0;
+padding: 0;
+vertical-align: middle;
+text-align:left;
+}
+tbody td, tbody th {
+background-color: #DFC;
+border-bottom: 2px solid #B3DE94;
+border-top: 3px solid #FFFFFF;
+padding: 9px;
+}
+tfoot td, tfoot th {
+font-weight: bold;
+padding: 4px 8px 6px 9px;
+text-align:center;
+}
+thead th {
+font-size: 14px;
+font-weight: bold;
+line-height: 19px;
+padding: 0 8px 2px;
+text-align:center;
+}
+.wrapper{width: 300px;float: left;margin: 10px;}
+@media  screen and (max-width: 500px )
+	{
+		.wrapper{width: 100%;margin: 0;clear: both;}
+		#along1,#along2,#along3,#along4,#along5,#along6{width: 100%;}
+	}
+</style>
+<body><div >
+	<div class="wrapper" >
+		
+	
+		
+	<div id="along1">
+				<div class="along-cf">
+					<img src="images/2.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/3.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/4.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/5.jpg">
+				</div>
+	</div>
+
+	<p style="padding: 10px;">buff全开，支持手机端滑动</p>
+	</div>
+	<div class="wrapper">
+		<div id="along2">
+				<div class="along-cf">
+					<img src="images/2.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/3.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/4.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/5.jpg">
+				</div>
+	</div>
+	<p style="padding: 10px;">去除无缝滚动效果</p>
+	</div>
+	<div class="wrapper">
+		<div id="along3">
+				<div class="along-cf">
+					<img src="images/2.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/3.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/4.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/5.jpg">
+				</div>
+	</div>
+	<p style="padding: 10px;">去除控制面板按钮</p>
+	</div>
+	<div class="wrapper">
+		<div id="along4">
+				<div class="along-cf">
+					<img src="images/2.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/3.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/4.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/5.jpg">
+				</div>
+	</div>
+	<p style="padding: 10px;">去除拖拽效果</p>
+	</div>
+	<div class="wrapper">
+		<div id="along5">
+				<div class="along-cf">
+					<img src="images/2.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/3.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/4.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/5.jpg">
+				</div>
+	</div>
+	<p style="padding: 10px;">去除两边按钮</p>
+	</div>
+	<div class="wrapper">
+		<div id="along6">
+				<div class="along-cf">
+					<img src="images/2.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/3.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/4.jpg">
+				</div>
+				<div class="along-cf">
+					<img src="images/5.jpg">
+				</div>
+	</div>
+	<p style="padding: 10px;">去除自动轮播</p>
+	</div>
+	</div>
+	<table>
+		<caption>options 参数</caption>
+		<thead><tr>
+			<th>属性名</th>
+			<th>类型</th>
+			<th>默认值</th>
+			<th>说明</th>
+		</tr></thead>
+		<tbody>
+		<tr>
+			<td>id</td>
+			<td>String</td>
+			<td>''</td>
+			<td>容器id值,必须有</td>
+		</tr>
+		<tr>
+			<td>dots</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>是否显示面板指示点,默认不显示</td>
+		</tr>
+		<tr>
+			<td>dotColor</td>
+			<td>String</td>
+			<td>'rgba(0,0,0,0.3)'</td>
+			<td>指示点颜色,默认透明灰</td>
+		</tr>
+		<tr>
+			<td>activeColor</td>
+			<td>String </td>
+			<td>'#fff'</td>
+			<td>当前选中的指示点颜色,默认黑</td>
+		</tr>
+		<tr>
+			<td>autoplay</td>
+			<td>boolean </td>
+			<td>false</td>
+			<td>是否自动轮播,默认否</td>
+		</tr>
+		<tr>
+			<td>circular</td>
+			<td>boolean </td>
+			<td>false</td>
+			<td>是否采用衔接滑动,默认否</td>
+		</tr>
+		<tr>
+			<td>holding</td>
+			<td>boolean </td>
+			<td>false</td>
+			<td>是否在鼠标滑过时清除自动轮播,默认否</td>
+		</tr>
+		<tr>
+			<td>touchMove</td>
+			<td>boolean </td>
+			<td>false</td>
+			<td>是否开启拖拽,默认否</td>
+		</tr>
+		<tr>
+			<td>siderBar</td>
+			<td>boolean </td>
+			<td>false</td>
+			<td>是否添加左右切换按钮</td>
+		</tr>
+		<tr>
+			<td>interval</td>
+			<td>int </td>
+			<td>5000</td>
+			<td>轮播时间间隔,默认5000ms</td>
+		</tr>
+		<tr>
+			<td>siderBar</td>
+			<td>int </td>
+			<td>500</td>
+			<td>图片滑动时间,默认500ms</td>
+		</tr>
+		</tbody>
+	</table>
+	<p>1、首先创建html结构，给容器id(必须)，给每一个轮播元素添加class= "along-cf"(必须)</p>
+	<p>2、引入along.cf.wx-2.0.1.js文件</p>
+	<p>3、var along1 = new Alongcf(options);</p>
+	<p>4、along1.init();</p>
+	
+	
+</body>
+<script src="along.cf.wx-2.0.1.js"></script>
+<script type="text/javascript">
+	var along1 = new Alongcf({'id':'along1','interval':3000,'duration':500,'circular':true,'dots':true,'autoplay':true,'touchMove':true,'holding':true,'siderBar':true});
+	along1.init();
+	var along2 = new Alongcf({'id':'along2','interval':3000,'duration':500,'circular':false,'dots':true,'autoplay':true,'touchMove':true,'holding':true,'siderBar':true});
+	along2.init();
+	var along3 = new Alongcf({'id':'along3','interval':5000,'duration':100,'circular':true,'autoplay':true,'touchMove':true,'holding':true,'siderBar':true});
+	along3.init();
+	var along4 = new Alongcf({'id':'along4','interval':3000,'duration':500,'circular':true,'autoplay':true,'holding':true,'siderBar':true});
+	along4.init();
+	var along5 = new Alongcf({'id':'along5','interval':3000,'duration':500,'circular':true,'autoplay':true,'holding':true,'touchMove':true});
+	along5.init();
+	var along6 = new Alongcf({'id':'along6','interval':3000,'duration':500,'circular':true,'holding':true,'siderBar':true,'touchMove':true});
+	along6.init();
+</script>
+</html>

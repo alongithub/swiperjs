@@ -267,10 +267,10 @@ Alongcf.prototype = {
 				that.longBox.style.transition = that.options.duration+'ms';
 				if(Math.abs(disX)>10){
 
-					if(disX>(that.width/2)){
+					if(disX>(that.width/4)){
 						that.changeImg(that.index-1);
 					}
-					else if (disX<(-that.width/2)&&Math.abs(disX)>20) {
+					else if (disX<(-that.width/4)&&Math.abs(disX)>20) {
 						that.changeImg(that.index+1);
 					}else{
 						that.changeImg(that.index);
